@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Lista de Mecánicos</title>
+</head>
+<body>
+    <h1>Lista de Mecánicos</h1>
+    <a href="{% url 'agregar_mecanico' %}">Agregar Mecánico</a>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Carnet de Identidad</th>
+            <th>Chapa del Vehículo</th>
+            <th>Modelo del Vehículo</th>
+            <th>Acciones</th>
+        </tr>
+        {% for mecanico in mecanicos %}
+        <tr>
+            <td>{{ mecanico.nombre }}</td>
+            <td>{{ mecanico.carnet_identidad }}</td>
+            <td>{{ mecanico.chapa_vehiculo }}</td>
+            <td>{{ mecanico.modelo_vehiculo }}</td>
+            <td>
+                <a href="{% url 'editar_mecanico' mecanico.pk %}">Editar</a>
+                <a href="{% url 'eliminar_mecanico' mecanico.pk %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

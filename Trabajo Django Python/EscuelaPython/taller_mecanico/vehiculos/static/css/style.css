@@ -1,0 +1,57 @@
+/* style.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* Color oscuro para el título */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+a {
+    display: inline-block; /* Hace que el enlace ocupe solo el espacio necesario */
+    margin: 10px auto; /* Espacio automático para centrar */
+    padding: 10px 15px; /* Relleno del enlace */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    background-color: #6c757d; /* Color gris para el botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+a:hover {
+    background-color: #5a6268; /* Color gris más oscuro al pasar el mouse */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Espacio superior para la tabla */
+}
+
+th, td {
+    border: 1px solid #dee2e6; /* Bordes de la celda */
+    padding: 10px; /* Relleno de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+th {
+    background-color: #f1f1f1; /* Color de fondo para encabezados */
+}
+
+/* Estilo de los enlaces dentro de la tabla (acciones) */
+td a {
+    background-color: #6c757d; /* Color gris para los botones de acción */
+    padding: 5px 10px; /* Relleno del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+td a:hover {
+    background-color: #5a6268; /* Color gris más oscuro al pasar el mouse */
+}

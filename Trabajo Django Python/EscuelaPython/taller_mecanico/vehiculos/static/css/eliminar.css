@@ -1,0 +1,56 @@
+/*Eliminar*/
+/* style.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #dc3545; /* Color rojo para el título */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+p {
+    text-align: center; /* Centra el texto del párrafo */
+    font-size: 18px; /* Tamaño de fuente del párrafo */
+    color: #333; /* Color oscuro para el texto */
+}
+
+/* Estilo del formulario */
+form {
+    display: flex; /* Utiliza flexbox para centrar el botón */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Espacio superior para el formulario */
+}
+
+button {
+    background-color: #dc3545; /* Color rojo para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Relleno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente del botón */
+}
+
+button:hover {
+    background-color: #c82333; /* Color rojo más oscuro al pasar el mouse */
+}
+
+/* Estilo del enlace "Cancelar" */
+a {
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    text-align: center;
+    margin-top: 20px; /* Espacio superior para el enlace */
+    color: #007bff; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
